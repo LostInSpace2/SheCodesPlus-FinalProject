@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html {
+    -webkit-text-size-adjust: 100%;
+}  
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+    background: #16254f;
+    padding: 2px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 16px;
+    color: white;
+    line-height: 1.1;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.325rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: var(--bs-link-color);
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.weatherApp {
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgb(195 194 194 / 70%);
+    position: fixed;
+    overflow: hidden;
+    top: 5vh;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: white;
+    color: #16254F;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    margin: auto;
+    padding: 33px 20px;
+}
+
+.row {
+    max-width: 100%;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+}
+
+#rowFirst {
+    margin: auto;
+}
+
+.col-6, .col-3 {
+    padding: 5px;
+}
+
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.col-3 {
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+#city-input, #city-search, #locate-button {
+    font-size: 13.5px;
+    line-height: 23px;
+}
+
+#city-search, #locate-button {
+    background-color: #16254f;
+    color: white;
+    font-weight: 500;
+}
+
+.form-control {
+    border: 2.5px solid #16254f;
+    padding: 3px 6px 3px 6px;
+    width: 100%;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.main {
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.p1 {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.main-details {
+    padding: 10px;
+    margin: 15px;
+}
+
+.colN1, .colN2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.colN2 {
+    justify-content: flex-end;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.weather-temperature .units {
+    position: relative;
+    font-size: 14px;
+    top: 5px;
+}
+
+.weather-temperature .active {
+    color: rgb(33, 33, 33);
+    cursor: default;
+}
+
+.weather-temperature .active:hover {
+    text-decoration: none;
+}
+
+.currentTempDetails {
+    font-size: 12.5px;
+    width: 132px;
+}
+
+#icon {
+    height: 64px;
+    width: 64px;
+    float: left !important;
+}
+
+.float-left {
+    float: left !important;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#temperature {
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.weather-forecast {
+    text-align: center;
+    margin-top: 23px;
+    border-bottom: 1px solid #f9f7fe;
+    padding: 0 10px 40px;
+}
+
+.col-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+    padding: 0;
+}
+
+.weather-forecast-date {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-block-start: 1em;
+    margin-bottom: var(--bs-card-title-spacer-y);
+}
+
+.img-day {
+    vertical-align: middle;
+    width: 42px;
+}
+
+.weather-forecast-temperature-max, .weather-forecast-temperature-min {
+    font-size: smaller;
+}
+
+.weather-forecast-temperature-max {
+    font-weight: bold;
+}
+
+.weatherApp footer {
+    color: rgba(39,33,66,.4);
+    font-size: 14px;
+    line-height: 18px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.gitHubLink a {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px){
+    .weatherApp {
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        min-width: auto;
+        max-height: none;
+        max-width: none;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}

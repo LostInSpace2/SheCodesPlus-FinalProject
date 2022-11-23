@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SheCode Plus - Final Project</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="weatherApp">
+      <header>
+        <h1>
+            Local Daily Weather
+        </h1>
+      </header>
+      <form id="city-form">
+        <div class="input-group">
+          <div class="row" id="rowFirst">
+            <div class="col-6" id="searchButton">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Enter a city"
+                id="city-input"
+              />
+            </div>
+            <div class="col-3" id="submitButton">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control"
+                id="city-search"
+              />
+            </div>
+            <div class="col-3" id="locateButton">
+              <input
+                type="button"
+                value="Locate"
+                class="form-control"
+                id="locate-button"
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="main">
+        <div class="main-details">
+          <h2 id="city">
+            Rishon LeZion
+          </h2>
+          <ul class="p1">
+            <li id="date"></li>
+            <li id="description">
+              Partly cloudy
+            </li>
+          </ul>
+          <div class="row">
+            <div class="colN1">
+              <div class="clearfix weather-temperature">
+                <img
+                  id="icon"
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="Weather Icon"
+                />
+                <div class="float-left">
+                  <span id="temperature">
+                    28
+                  </span>
+                  <span class="units">
+                    <a href="#" class="active" id="celsius-link">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="colN2">
+              <div class="currentTempDetails">
+                <ul id="tempDetails">
+                    <li id="feelsLike">Feels like: 28°C</li>
+				    <li id="humidity">Humidity: 67%</li>
+				    <li id="wind">Wind: 14 km/h</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="weather-forecast" id="forecast"></div>
+      <footer>
+        <small class="gitHubLink">
+          This project was coded by Shir Rose Aharoni.
+          </br>
+          It is
+          <a
+            href="https://github.com/LostInSpace2/vanilla-Weather-search"
+            target="_blank"
+            >open-sourced on GitHub</a
+          > and 
+          <a href="https://imaginative-dusk-2c3109.netlify.app/" target="_blank">hosted on Netlify</a>
+        </small>
+      </footer>  
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
